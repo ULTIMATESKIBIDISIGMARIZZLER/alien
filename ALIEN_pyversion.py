@@ -32,12 +32,9 @@ space = pygame.transform.scale(pygame.image.load("Lesson 7/images/space.png"),(W
 def draw():
     screen.blit(space,(0,0))
 
-# Main Game Loop
 running = True
 while running:
-    screen.fill(WHITE)  # Clear screen
-
-    # Event Handling
+    screen.fill(WHITE)  
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
